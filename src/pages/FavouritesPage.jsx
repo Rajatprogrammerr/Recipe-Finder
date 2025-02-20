@@ -6,7 +6,7 @@ const FavouritesPage = () => {
     let favourites = JSON.parse(localStorage.getItem("favourites")) || [];
     return (
         <>
-            <div className=' flex-1 p-4 min-h-screen'>
+            <div className=' flex-1 md:p-4 pb-20 pt-4 px-2 min-h-screen'>
                 <div className='max-w-screen-lg mx-auto'>
                     <p className='font-bold text-3xl md:text-5xl my-4 text-center'>My Favorites</p>
 
