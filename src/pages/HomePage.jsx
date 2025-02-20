@@ -41,12 +41,12 @@ const HomePage = () => {
     }
     return (
         <>
-            <div className='flex-1 m-6'>
+            <div className='flex-1 md:m-6  mb-20 mt-4'>
                 <form className='flex items-center justify-center' onSubmit={handleSearchRecipe}>
                     <label className='input w-[50vw]   items-center shadow-md flex gap-4'>
                         <Search size={'24'} />
                         <input type="text"
-                            placeholder='What do you want to cook today?'
+                            placeholder='Search Recipe'
                             className='text-white grow p-2 '
                         />
                     </label>

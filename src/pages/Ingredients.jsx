@@ -82,7 +82,7 @@ const Ingredients = () => {
   };
 
   return (
-    <div className="flex-1 min-h-screen py-8 ">
+    <div className="flex-1 min-h-screen md:py-8 pt-4 pb-20  ">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-8">
           {/* Header */}
