@@ -2,9 +2,9 @@ import { Search } from 'lucide-react'
 import React, { useEffect } from 'react'
 import RecipeCard from '../components/RecipeCard'
 import { useState } from 'react';
-import Ingredients from './Ingredients';
 
-// const APP_KEY = "96dee8a7a8474871997c6308dd34d63c";
+
+
 
 
 
@@ -16,7 +16,7 @@ const HomePage = () => {
         setLoading(true)
         setRecipes([])
         try {
-            // const res = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${APP_KEY}&query=${serachQuery}`)
+            
             const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${serachQuery}`)
             const data = await res.json()
             setRecipes(data.meals)
